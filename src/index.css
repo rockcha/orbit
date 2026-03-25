@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Orbit&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  font-family: "Orbit", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Orbit", sans-serif;
+}
+
+.orbit {
+  font-family: "Orbit", sans-serif;
+}
+
+.gowun {
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+/* ============================= */
+
+progress::-webkit-progress-value {
+  transition: width 0.5s ease-in-out;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 1px white;
+  }
+  .transition-300 {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .transition-500 {
+    @apply transition-all duration-500 ease-in-out;
+  }
+  .blur-2px {
+    @apply backdrop-blur-[2px];
+  }
+  .fixed-center {
+    @apply fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+  .section {
+    @apply rounded-lg bg-black/30 p-6;
+  }
+  .card-grid {
+    @apply grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5;
+  }
+
+  @keyframes float-soft {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .animate-float-soft {
+    animation: float-soft 2.2s ease-in-out infinite;
+  }
+}

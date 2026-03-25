@@ -1,0 +1,100 @@
+/* ===============================
+   HUD Button
+================================ */
+
+.btn-hud {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 18px 25px;
+  border-radius: 10px;
+  border: 0;
+
+  background: transparent;
+  color: rgba(255, 255, 255, 0.92);
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+
+  cursor: pointer;
+  position: relative;
+  isolation: isolate;
+
+  --bracket: rgba(140, 190, 255, 0.75);
+
+  --bracket-w: 12px;
+  --bracket-stroke: 2px;
+
+  /* 기본 위치 (살짝 안쪽) */
+  --bracket-inset: 6px;
+
+  /* 호버 시 바깥으로 벌어짐 */
+  --bracket-inset-hover: 2px;
+}
+
+/* =========================
+   BRACKET
+========================= */
+
+.btn-hud::before,
+.btn-hud::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+
+  width: var(--bracket-w);
+  height: var(--bracket-w);
+
+  border: var(--bracket-stroke) solid var(--bracket);
+
+  /* 항상 보이게 */
+  opacity: 1;
+
+  /* 기본 glow */
+  filter: drop-shadow(
+    0 0 6px color-mix(in srgb, var(--bracket) 70%, transparent)
+  );
+
+  transition:
+    top 180ms ease,
+    left 180ms ease,
+    right 180ms ease,
+    bottom 180ms ease;
+}
+
+.btn-hud::before {
+  top: var(--bracket-inset);
+  left: var(--bracket-inset);
+  border-right: none;
+  border-bottom: none;
+}
+
+.btn-hud::after {
+  right: var(--bracket-inset);
+  bottom: var(--bracket-inset);
+  border-left: none;
+  border-top: none;
+}
+
+/* =========================
+   HOVER = 위치만 이동 (벌어짐)
+========================= */
+
+.btn-hud:hover::before,
+.btn-hud:focus-visible::before {
+  top: var(--bracket-inset-hover);
+  left: var(--bracket-inset-hover);
+}
+
+.btn-hud:hover::after,
+.btn-hud:focus-visible::after {
+  right: var(--bracket-inset-hover);
+  bottom: var(--bracket-inset-hover);
+}
+
+.btn-hud:hover {
+  transform: translateY(-1px);
+}

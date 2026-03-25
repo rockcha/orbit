@@ -1,0 +1,143 @@
+{
+  "spaceship": {
+    "fuel": 115,
+    "isDamaged": false
+  },
+  "planets": [
+    {
+      "id": "1",
+      "name": "수성",
+      "fuelCost": 25,
+      "description": "태양과 가장 가까운 행성으로, 표면 온도 변화가 매우 크다.",
+      "dangerLevel": 30,
+      "travelTime": 2000,
+      "imgUrl": "/planets/mercury.png"
+    },
+    {
+      "id": "2",
+      "name": "금성",
+      "fuelCost": 15,
+      "description": "두꺼운 이산화탄소 대기와 극심한 온실효과로 매우 뜨거운 행성이다.",
+      "dangerLevel": 40,
+      "travelTime": 1500,
+      "imgUrl": "/planets/venus.png"
+    },
+    {
+      "id": "3",
+      "name": "화성",
+      "fuelCost": 10,
+      "description": "붉은 행성으로 불리며, 과거 물의 흔적이 발견된 적이 있다.",
+      "dangerLevel": 45,
+      "travelTime": 1000,
+      "imgUrl": "/planets/mars.png"
+    },
+    {
+      "id": "4",
+      "name": "목성",
+      "fuelCost": 30,
+      "description": "태양계에서 가장 큰 행성으로, 강력한 폭풍과 거대한 대적점이 존재한다.",
+      "dangerLevel": 40,
+      "travelTime": 3500,
+      "imgUrl": "/planets/jupiter.png"
+    },
+    {
+      "id": "5",
+      "name": "토성",
+      "fuelCost": 65,
+      "description": "아름다운 고리로 유명한 가스 행성이다.",
+      "dangerLevel": 45,
+      "travelTime": 4500,
+      "imgUrl": "/planets/saturn.png"
+    },
+    {
+      "id": "6",
+      "name": "천왕성",
+      "fuelCost": 80,
+      "description": "자전축이 크게 기울어져 있어 독특하게 옆으로 누운 듯 회전하는 행성이다.",
+      "dangerLevel": 50,
+      "travelTime": 6000,
+      "imgUrl": "/planets/uranus.png"
+    },
+    {
+      "id": "7",
+      "name": "해왕성",
+      "fuelCost": 90,
+      "description": "강한 바람과 매우 차가운 대기를 가진 태양계의 먼 행성이다.",
+      "dangerLevel": 45,
+      "travelTime": 6500,
+      "imgUrl": "/planets/neptune.png"
+    },
+    {
+      "id": "8",
+      "name": "오르트 구름",
+      "fuelCost": 120,
+      "description": "태양계를 둘러싸고 있는 거대한 얼음 천체 구름으로, 혜성의 근원지로 추정된다.",
+      "dangerLevel": 60,
+      "travelTime": 10000,
+      "imgUrl": "/planets/oort_cloud.png"
+    },
+    {
+      "id": "9",
+      "name": "중성자별",
+      "fuelCost": 150,
+      "description": "초신성 폭발 후 남은 극도로 밀도가 높은 별로, 강력한 중력과 방사선을 가진다.",
+      "dangerLevel": 95,
+      "travelTime": 12000,
+      "imgUrl": "/planets/neutron_star.png"
+    },
+    {
+      "id": "10",
+      "name": "케플러-186f",
+      "fuelCost": 110,
+      "description": "지구와 비슷한 크기를 가진 외계 행성으로, 생명체 존재 가능성이 제기된 곳이다.",
+      "dangerLevel": 50,
+      "travelTime": 9000,
+      "imgUrl": "/planets/kepler-186f.png"
+    },
+    {
+      "id": "11",
+      "name": "창조의 기둥",
+      "fuelCost": 130,
+      "description": "독수리 성운에 위치한 거대한 가스와 먼지 기둥으로, 별이 탄생하는 영역이다.",
+      "dangerLevel": 70,
+      "travelTime": 11000,
+      "imgUrl": "/planets/pillars_of_creation.png"
+    },
+    {
+      "id": "12",
+      "name": "유로파",
+      "fuelCost": 55,
+      "description": "목성의 위성으로, 얼음 아래 바다가 존재할 가능성이 있어 생명체 연구 대상이다.",
+      "dangerLevel": 40,
+      "travelTime": 4000,
+      "imgUrl": "/planets/europa.png"
+    }
+  ],
+  "explorationLogs": [
+    {
+      "id": "1",
+      "planetId": 1,
+      "content": "표면에서 얼음 흔적 발견",
+      "createdAt": "2026-03-23T12:30:00Z"
+    },
+    {
+      "planetId": "7",
+      "content": "ㅇㅈ",
+      "createdAt": "2026-03-25T11:44:48.589Z",
+      "id": "tcaX4EvKlXU"
+    },
+    {
+      "planetId": "4",
+      "content": "목성은 생각보다 뷰가 좋다",
+      "createdAt": "2026-03-25T12:22:46.728Z",
+      "id": "ZECKxS210vw"
+    },
+    {
+      "planetId": "5",
+      "content": "생명체 발견!",
+      "createdAt": "2026-03-25T12:27:28.449Z",
+      "id": "JKohjJHgr5U"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
