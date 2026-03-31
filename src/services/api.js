@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3001";
+const BASE_URL = "https://my-json-server.typicode.com/rockcha/orbit";
 
 const fetchJson = async (endPoint = "", options = {}) => {
   const res = await fetch(`${BASE_URL}${endPoint}`, {

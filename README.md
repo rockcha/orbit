@@ -1,16 +1,62 @@
-# React + Vite
+# Orbit - React Mini Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🚀 프로젝트 개요
 
-Currently, two official plugins are available:
+`Orbit`는 React, Vite, TailwindCSS 기반의 학습용 미니 프로젝트입니다. 우주 탐사 테마를 적용하여 다음 기능을 구현합니다:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 행성 목록 탐색 및 선택
+- 우주선 상태(충전, 수리) 관리
+- 여행 기록(로그) 생성 및 보관
+- 마크다운 미로 UI/UX
 
-## React Compiler
+### 🧩 기술 스택
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- TailwindCSS
+- React Router DOM
+- @tanstack/react-query
+- json-server (로컬 API 모킹)
 
-## Expanding the ESLint configuration
+### 📁 주요 폴더 구조
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/pages` : 페이지 컴포넌트
+- `src/layouts` : 레이아웃 및 공통 UI
+- `src/services/api.js` : API 호출 정의
+- `src/commons/hooks` : 커스텀 훅
+- `src/constants` : 라우트 메타, 상수
+
+### ▶️ 설치 및 실행
+
+```bash
+npm install
+npm run server # json-server로 API 로컬 실행 (기본 포트 3001)
+npm run dev
+```
+
+브라우저에서 `http://localhost:5173` 방문.
+
+### 🧪 테스트 및 린트
+
+```bash
+npm run lint
+```
+
+### 🛠 개발 주의
+
+- `db.json`에 탐사 로그가 저장됩니다.
+- `src/services/api.js`에서 CRUD API 함수가 정의되어 있어 `react-query`와 함께 사용됩니다.
+
+### ✅ 배포
+
+빌드:
+
+```bash
+npm run build
+```
+
+---
+
+### 📝 커밋/푸시 작업 확인
+
+이 저장소에서 `README.md`를 갱신하고, 기존 변경 사항을 커밋/푸시합니다.
