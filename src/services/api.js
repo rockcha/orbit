@@ -1,4 +1,5 @@
-const BASE_URL = "https://my-json-server.typicode.com/rockcha/orbit";
+const BASE_URL =
+  "https://my-json-server.typicode.com/rockcha/orbit-json-server";
 
 const fetchJson = async (endPoint = "", options = {}) => {
   const res = await fetch(`${BASE_URL}${endPoint}`, {
