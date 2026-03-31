@@ -138,6 +138,5 @@
       "createdAt": "2026-03-25T12:27:28.449Z",
       "id": "JKohjJHgr5U"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
